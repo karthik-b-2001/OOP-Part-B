@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.dashboardController">
+   <children>
+      <Button fx:id="b1" layoutX="135.0" layoutY="77.0" mnemonicParsing="false" onAction="#goToresult" prefHeight="54.0" prefWidth="100.0" stylesheets="@../CSS/button.css" text="Results" textFill="#e11a1a">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="135.0" layoutY="222.0" mnemonicParsing="false" onAction="#goTocourse" prefHeight="54.0" prefWidth="100.0" stylesheets="@../CSS/button.css" text="Courses" textFill="#e81313">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="103.0" fitWidth="77.0" layoutX="28.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/res.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="92.0" fitWidth="84.0" layoutX="25.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/course.PNG" />
+         </image>
+      </ImageView>
+      <Button layoutX="426.0" layoutY="83.0" mnemonicParsing="false" onAction="#goToviewRes" prefHeight="54.0" prefWidth="100.0" stylesheets="@../CSS/button.css" text="View Results">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="66.0" fitWidth="77.0" layoutX="336.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/see.PNG" />
+         </image>
+      </ImageView>
+      <Button layoutX="426.0" layoutY="227.0" mnemonicParsing="false" onAction="#goToviewCou" prefHeight="44.0" prefWidth="100.0" stylesheets="@../CSS/button.css" text="View Courses" />
+      <ImageView fitHeight="54.0" fitWidth="68.0" layoutX="343.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/c1.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="476.0" layoutY="343.0" mnemonicParsing="false" onAction="#Logout" prefHeight="34.0" prefWidth="77.0" stylesheets="@../CSS/button.css" text="Logout" />
+      <Label layoutX="215.0" layoutY="14.0" prefHeight="39.0" prefWidth="155.0" text="Dashboard">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

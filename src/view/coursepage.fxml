@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.courseController">
+   <children>
+      <MenuButton fx:id="coursename" layoutX="150.0" layoutY="147.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="155.0" text="Courses">
+        <items>
+          <MenuItem fx:id="mathmenu" mnemonicParsing="false" onAction="#getMath" text="Maths" />
+          <MenuItem fx:id="sciencemenu" mnemonicParsing="false" onAction="#getScience" text="Science" />
+            <MenuItem fx:id="englishmenu" mnemonicParsing="false" onAction="#getEnglish" text="English" />
+            <MenuItem fx:id="pemenu" mnemonicParsing="false" onAction="#getPE" text="Physical education" />
+        </items>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </MenuButton>
+      <Button layoutX="350.0" layoutY="165.0" mnemonicParsing="false" onAction="#addCourse" prefHeight="39.0" prefWidth="74.0" stylesheets="@../CSS/button.css" text="ADD" />
+      <Label layoutX="141.0" layoutY="27.0" prefHeight="46.0" prefWidth="327.0" text="Add your courses here">
+         <font>
+            <Font name="Comic Sans MS Bold" size="29.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="55.0" fitWidth="74.0" layoutX="61.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/c1.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="username" layoutX="152.0" layoutY="246.0" prefHeight="46.0" prefWidth="155.0" promptText="Enter username" />
+      <ImageView fitHeight="55.0" fitWidth="62.0" layoutX="58.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/username1.jpeg" />
+         </image>
+      </ImageView>
+      <Label fx:id="plabel" layoutX="129.0" layoutY="310.0" prefHeight="39.0" prefWidth="279.0" style="-fx-background-color: #FFFFFF;" />
+      <Button layoutX="31.0" layoutY="349.0" mnemonicParsing="false" onAction="#back" stylesheets="@../CSS/button.css" text="Back" />
+   </children>
+</AnchorPane>
